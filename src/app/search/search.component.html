@@ -1,0 +1,19 @@
+<div class="container">
+  <form>
+    <div class="form-group">
+      <h1 class="text-center text-primary">Search a product</h1>
+      <div class="input-group-prepend">
+      <input type="search" class="form-control"
+      placeholder="Enter your search term..."
+      [(ngModel)]="searchText"
+      name="searchText"
+      #searchBox
+      autocomplete="off">
+      <button class="input-group-text" (click)="doSearch()">
+         search
+      </button>
+    
+  </div>
+</div>
+</form>
+</div>
