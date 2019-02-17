@@ -12,10 +12,13 @@ export class UserService {
   ) { }
   users: any[] = [];
   userData(id) {
-  this.searchService.search(id.id)
-    .subscribe( result =>{
-      this.users=JSON.parse(result["_body"]).data;
-      console.log(this.users)
-    })
+  // this.searchService.search(id.id)
+  //   .subscribe( result =>{
+  //     this.users=JSON.parse(result["_body"]).data;
+  //     console.log(this.users)
+  //   })
+
+  this.users = id;
+  console.log(this.users);
   }
 }
