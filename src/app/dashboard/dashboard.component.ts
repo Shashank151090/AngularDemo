@@ -14,7 +14,15 @@ export class DashboardComponent implements OnInit {
     private searchService: SearchService,
     private userService: UserService,
      private router : Router,
-    ) { }
+    ) { 
+      this.items = [
+        { name: '../assets/images/akash_01.jpg' },
+        { name: '../assets/images/akash_01.jpg' },
+        { name: '../assets/images/akash_01.jpg' },
+        
+      ]
+    }
+  items: Array<any> = []
   users: any[] = [];
   results: any;
   ngOnInit() {

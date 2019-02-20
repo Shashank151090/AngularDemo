@@ -1,7 +1,7 @@
 <div class="modal-content">
     <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
-        <h4 class="modal-title" id="myModalLabel">More About Joe</h4>
+        <h4 class="modal-title" id="myModalLabel">More About {{userData.first_name}}</h4>
         </div>
     <div class="modal-body"> 
         <img src="{{userData.avatar}}" name="aboutme" width="140" height="140" border="0" class="img-circle">
@@ -17,6 +17,6 @@
         <br>
     </div>
     <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">I've heard enough about Joe</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">I've heard enough about {{userData.first_name}}</button>
     </div>
 </div>
