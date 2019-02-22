@@ -1,0 +1,18 @@
+{
+    "id": 1,
+    "first_name": "Shashank",
+    "last_name": "Kumar",
+    "avatar": "./assets/images/shashank_01.jfif",
+    "contact": "+91-785 999 1873",
+    "dob": "15th May 1989",
+    "currentCity":"Bangalore",
+    "hometown": "Jamshedpur",
+    "education": {
+        "school":"Church School Beldih",
+        "college": "Dr. M.G.R Educational and Research Institute, Chennai"
+    },
+    "work": {
+        "present": "Tata Consultancy Services",
+        "past": ["Infosys", "HARMAN Connected Services"]
+    }
+}

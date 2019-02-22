@@ -1,0 +1,18 @@
+{
+    "id": 3,
+    "first_name": "Akash",
+    "last_name": "Sahu",
+    "avatar": "./assets/images/akash_01.jpg",
+    "contact": "+91-9030 809 525",
+    "dob": "14th Feb 1989",
+    "currentCity":"Bangalore",
+    "hometown": "Jamshedpur",
+    "education": {
+        "school":"Church School Beldih",
+        "college": "Alliance University, Bangalore"
+    },
+    "work": {
+        "present": "Axis Bank",
+        "past": [""]
+    }
+}

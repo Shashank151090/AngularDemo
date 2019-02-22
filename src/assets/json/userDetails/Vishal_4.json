@@ -1,0 +1,18 @@
+{
+    "id": 4,
+    "first_name": "Vishal",
+    "last_name": "Jaiswal",
+    "avatar": "./assets/images/vishal_01.jpg",
+    "contact": "+91-7676 894 534",
+    "dob": "4th March 1991",
+    "currentCity":"Bangalore",
+    "hometown": "Jamshedpur",
+    "education": {
+        "school":"Church School Beldih",
+        "college": "NIT Bhopal, Bhopal"
+    },
+    "work": {
+        "present": "Reliance Digital",
+        "past": ["Sapient"]
+    }
+}

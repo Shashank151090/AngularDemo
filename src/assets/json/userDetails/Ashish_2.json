@@ -1,0 +1,18 @@
+{
+    "id": 2,
+    "first_name": "Ashish",
+    "last_name": "Jaiswal",
+    "avatar": "./assets/images/ashish_j_01.jpg",
+    "contact": "+91-8340 776 628",
+    "dob": "12th Feb 1989",
+    "currentCity":"Jamshedpur",
+    "hometown": "Jamshedpur",
+    "education": {
+        "school":"Church School Beldih",
+        "college": "Pune Institute of Business Management, Pune"
+    },
+    "work": {
+        "present": "Emcer Tiles",
+        "past": ["Cengres", "Bajaj Allianz Life Insurance Co."]
+    }
+}

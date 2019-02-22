@@ -17,10 +17,10 @@ export class SearchComponent implements OnInit {
     
    }
 doSearch(){
-  this.searchService.search(this.searchText)
-  .subscribe(results => {
-    console.log(results)
-  });
+  // this.searchService.search(this.searchText)
+  // .subscribe(results => {
+  //   console.log(results)
+  // });
 }
   ngOnInit() {
   }

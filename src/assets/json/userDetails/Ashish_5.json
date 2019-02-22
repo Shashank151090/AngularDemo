@@ -1,0 +1,18 @@
+{
+    "id": 5,
+    "first_name": "Ashish",
+    "last_name": "Gorai",
+    "avatar": "./assets/images/ashish_g_01.jpg",
+    "contact": "+91-8697 672 992",
+    "dob": "6th Sept 1990",
+    "currentCity":"Kolkata",
+    "hometown": "Jamshedpur",
+    "education": {
+        "school":"Church School Beldih",
+        "college": "Dr. M.G.R Educational and Research Institute, Chennai"
+    },
+    "work": {
+        "present": "Cognizant",
+        "past": ["Tata Consultancy Services"]
+    }
+}
