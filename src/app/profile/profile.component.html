@@ -6,21 +6,33 @@
     <div class="modal-body"> 
         <div class="row">
             <div class="col-md-3">
-                    <img src="{{user.avatar}}" name="aboutme" width="140" height="140" border="0" class="img-circle">
+                    <img src="{{user.avatar}}" name="aboutme" width="300" height="350" border="0" >
             </div>
             <div class="col-md-9">
-                    <h3 class="media-heading">{{user.first_name}} <small>{{user.last_name}}</small></h3>
-                    <h3 class="media-heading">B'Day: <small>{{user.dob}}</small></h3>
-                    <h3 class="media-heading">Call me: <small>{{user.contact}}</small></h3>
-                    <h3 class="media-heading">Where are you now: <small>{{user.currentCity}}</small></h3>
-
+                    <h3 class="media-heading"> {{user.first_name}} <small>{{user.last_name}}</small></h3>
+                    <h3 class="media-heading">About me: </h3>
+                    <p><i class="fas fa-birthday-cake"></i> <small> {{user.dob}}</small><br></p> 
+                    <p><i class="fas fa-mobile-alt"></i> <small> {{user.contact}}</small><br></p> 
+                    <p><i class="fas fa-city"></i> <small> {{user.currentCity}}</small><br></p>
+                    <p><i class="fas fa-home" style="margin: 0 0 10px"></i> {{user.hometown}}</p>
+                    <p class="text-left"><strong>Education: </strong><br>
+                    <i class="fas fa-graduation-cap"></i> {{user.education.college}}<br>
+                    <i class="fas fa-university"></i> {{user.education.school}}
+                    <p class="text-left"><strong>Work: </strong><br>
+                    <i class="fas fa-briefcase"></i> {{user.work.present}} (currently working)
+                    <li *ngFor="let work of user.work.past">
+                        <span>
+                                <i class="fas fa-briefcase"></i>
+                        </span>
+                        <span>
+                                {{work}} (ex-employee)
+                        </span>
+                    </li>
             </div>
         </div>
         
        
-        <p class="text-left"><strong>Bio: </strong><br>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sem dui, tempor sit amet commodo a, vulputate vel tellus.</p>
-        <br>
+        
     </div>
     <div class="modal-footer">
         <button type="button" class="btn btn-default" (click)="goBack()" data-dismiss="modal">I've heard enough about {{userData.first_name}}</button>

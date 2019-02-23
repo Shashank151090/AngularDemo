@@ -8,11 +8,11 @@
     "currentCity":"Bangalore",
     "hometown": "Jamshedpur",
     "education": {
-        "school":"Church School Beldih",
+        "school":"Church School Beldih, Jamshedpur",
         "college": "Dr. M.G.R Educational and Research Institute, Chennai"
     },
     "work": {
         "present": "Tata Consultancy Services",
-        "past": ["Infosys", "HARMAN Connected Services"]
+        "past": ["HARMAN Connected Services","Infosys"]
     }
 }
