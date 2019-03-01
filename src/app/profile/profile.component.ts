@@ -17,6 +17,7 @@ export class ProfileComponent implements OnInit {
   ) { }
 userData : any
 user: any[] = [];
+public CData: number;
   ngOnInit() {
     this.userData = this.userService.users;
     console.log(this.userData);
@@ -36,5 +37,4 @@ searchUser(user,id){
   goBack = function(){
     this.router.navigate('');
   }
-  
 }

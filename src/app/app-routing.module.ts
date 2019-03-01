@@ -1,3 +1,4 @@
+import { ChatComponent } from './profile/chat/chat.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ProfileComponent } from './profile/profile.component';
 
@@ -10,7 +11,8 @@ import { Routes, RouterModule } from '@angular/router';
 
 export  const routes: Routes = [
   { path: '', component: DashboardComponent},
-  { path: 'profile',  component: ProfileComponent }
+  { path: 'profile',  component: ProfileComponent },
+  { path: 'chat', component: ChatComponent }
 ];
 
 @NgModule({
