@@ -1,3 +1,5 @@
+import { LoginComponent } from './login/login.component';
+import { AddFriendsComponent } from './add-friends/add-friends.component';
 import { ChatComponent } from './profile/chat/chat.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ProfileComponent } from './profile/profile.component';
@@ -10,9 +12,11 @@ import { Routes, RouterModule } from '@angular/router';
 //import { AuthGuard } from './services/auth.guard';
 
 export  const routes: Routes = [
-  { path: '', component: DashboardComponent},
+  { path: '', component: LoginComponent},
+  { path: 'dashboard', component: DashboardComponent},
   { path: 'profile',  component: ProfileComponent },
-  { path: 'chat', component: ChatComponent }
+  { path: 'chat', component: ChatComponent },
+  { path: 'addNew', component: AddFriendsComponent },
 ];
 
 @NgModule({

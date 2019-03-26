@@ -8,30 +8,35 @@
             "id": 1,
             "first_name": "Shashank",
             "last_name": "Kumar",
+            "city": "Bangalore",
             "avatar": "./assets/images/shashank_01.jfif"
         },
         {
             "id": 2,
             "first_name": "Ashish",
             "last_name": "Jaiswal",
+            "city": "Jamshedpur",
             "avatar": "./assets/images/ashish_j_01.jpg"
         },
         {
             "id": 3,
             "first_name": "Akash",
             "last_name": "Sahu",
+            "city": "Bangalore",
             "avatar": "./assets/images/akash_01.jpg"
         },
         {
             "id": 4,
             "first_name": "Vishal",
             "last_name": "Jaiswal",
+            "city": "Bangalore",
             "avatar": "./assets/images/vishal_01.jpg"
         },
         {
             "id": 5,
             "first_name": "Ashish",
             "last_name": "Gorai",
+            "city": "Kolkata",
             "avatar": "./assets/images/ashish_g_01.jpg"
         }
     ]
