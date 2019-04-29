@@ -19,6 +19,8 @@ import { ChatModule } from './profile/chat/chat.module';
 import { AddFriendsComponent } from './add-friends/add-friends.component';
 import { LoginComponent } from './login/login.component';
 import { ShowFilterComponent } from './show-filter/show-filter.component';
+import { EditFriendsComponent } from './edit-friends/edit-friends.component';
+import { FileSelectDirective } from 'ng2-file-upload';
 
 @NgModule({
   declarations: [
@@ -31,11 +33,14 @@ import { ShowFilterComponent } from './show-filter/show-filter.component';
     AddFriendsComponent,
     LoginComponent,
     MyCityFilter,
-    ShowFilterComponent
+    ShowFilterComponent,
+    FileSelectDirective,
+    EditFriendsComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
+// tslint:disable-next-line: deprecation
     HttpModule,
     Ng2CarouselamosModule,
     RouterModule,

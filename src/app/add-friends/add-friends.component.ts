@@ -1,3 +1,4 @@
+import { SearchService } from './../search.service';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { Component, OnInit } from '@angular/core';
 
@@ -9,15 +10,15 @@ import { Component, OnInit } from '@angular/core';
 export class AddFriendsComponent implements OnInit {
   registerForm: FormGroup;
   submitted = false;
-  activeUsers : any = [];
+  activeUsers: any = [];
 
-  constructor(private formBuilder: FormBuilder) { }
+  constructor(private formBuilder: FormBuilder, private searchService: SearchService) { }
 
   ngOnInit() {
       this.registerForm = this.formBuilder.group({
           first_name: ['', Validators.required],
           last_name: ['', Validators.required],
-          email: ['', Validators.required]
+          contact: ['', Validators.required]
       });
       this.activeUsers = localStorage.getItem('activeUsers');
   }
@@ -33,7 +34,6 @@ export class AddFriendsComponent implements OnInit {
           return;
       }
 console.log(this.registerForm.value);
-console.log(this.activeUsers);
-      this.activeUsers.push(this.registerForm.value);
+    this.searchService.addNewUser(this.registerForm.value);
 }
 }

@@ -1,3 +1,4 @@
+import { EditFriendsComponent } from './edit-friends/edit-friends.component';
 import { LoginComponent } from './login/login.component';
 import { AddFriendsComponent } from './add-friends/add-friends.component';
 import { ChatComponent } from './profile/chat/chat.component';
@@ -9,7 +10,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 
 
-//import { AuthGuard } from './services/auth.guard';
+// import { AuthGuard } from './services/auth.guard';
 
 export  const routes: Routes = [
   { path: '', component: LoginComponent},
@@ -17,6 +18,8 @@ export  const routes: Routes = [
   { path: 'profile',  component: ProfileComponent },
   { path: 'chat', component: ChatComponent },
   { path: 'addNew', component: AddFriendsComponent },
+  { path: 'edit', component: EditFriendsComponent },
+
 ];
 
 @NgModule({

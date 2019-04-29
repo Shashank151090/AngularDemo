@@ -1,5 +1,12 @@
 <div class="container">
     <div class="row profile" >
+			<input type="file" name="photo" ng2FileSelect [uploader]="uploader" />
+
+			<button type="button" class="btn btn-success btn-s" 
+			  (click)="uploader.uploadAll()" 
+			  [disabled]="!uploader.getNotUploadedItems().length" >
+				  Upload an Image
+			</button>
 				<div id="container">
 						<div
 							ng2-carouselamos
@@ -11,8 +18,7 @@
 							[$item]="item"
 						>
 						</div>
-					
-					
+
 					<ng-template #prev>
 						<img src="assets/images/left-arrow.gif" id="left" />
 					</ng-template>
@@ -20,7 +26,6 @@
 						<img src="assets/images/right-arrow.gif" id="right" />
 					</ng-template>
 					<ng-template #item let-item let-i="index">
-					
 							<div class="col-md-6" *ngFor="let user of users">
 									<div class="profile-sidebar">
 										<!-- SIDEBAR USERPIC -->
