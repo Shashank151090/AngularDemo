@@ -21,7 +21,7 @@ this.userData = this.editUserService.editUserData();
       last_name: [this.userData.last_name, Validators.required],
       contact: [this.userData.contact, Validators.required],
       dob: [this.userData.dob],
-      curentCity: [this.userData.currentCity],
+      currentCity: [this.userData.currentCity],
       hometown: [this.userData.hometown],
       college: [this.userData.education.college],
       school: [this.userData.education.school],

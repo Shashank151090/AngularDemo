@@ -18,7 +18,15 @@ export class AddFriendsComponent implements OnInit {
       this.registerForm = this.formBuilder.group({
           first_name: ['', Validators.required],
           last_name: ['', Validators.required],
-          contact: ['', Validators.required]
+          contact: ['', Validators.required],
+          dob: [''],
+          currentCity: [''],
+          hometown: [''],
+          education: [{
+            college: '',
+            school: ''
+          }],
+          present: ['']
       });
       this.activeUsers = localStorage.getItem('activeUsers');
   }

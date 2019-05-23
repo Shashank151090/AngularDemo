@@ -37,7 +37,7 @@ searchUser(user, id) {
     });
 }
   goBack = function() {
-    this.router.navigate('');
+    this.router.navigate(['/dashboard']);
   };
   openEditUser(user) {
     this.router.navigate(['/edit']);
