@@ -8,6 +8,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { Ng2CarouselamosModule } from 'ng2-carouselamos';
 import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { SearchComponent } from './search/search.component';
 import { SearchService } from './search.service';
@@ -21,6 +22,7 @@ import { LoginComponent } from './login/login.component';
 import { ShowFilterComponent } from './show-filter/show-filter.component';
 import { EditFriendsComponent } from './edit-friends/edit-friends.component';
 import { FileSelectDirective } from 'ng2-file-upload';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +37,8 @@ import { FileSelectDirective } from 'ng2-file-upload';
     MyCityFilter,
     ShowFilterComponent,
     FileSelectDirective,
-    EditFriendsComponent
+    EditFriendsComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule,
@@ -48,6 +51,7 @@ import { FileSelectDirective } from 'ng2-file-upload';
     AppRoutingModule,
     ReactiveFormsModule,
     RouterModule.forRoot(routes),
+    NgbModule,
     SharedModule,
     ChatModule
   ],
